@@ -1,8 +1,8 @@
 import './Tag.css';
 
-const Tag = ({name})=>{
+const Tag = ({name, selectedTag})=>{
     return (
-        <button className="tag">{name}</button>
+        <button type='button' onClick={()=>selectedTag(name)} className="tag">{name}</button>
     )
 }
 
